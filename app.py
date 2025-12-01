@@ -168,4 +168,14 @@ def get_brake_zones(df, threshold=1e-3):
             in_zone = True
             start_x = x[i]
         if not m and in_zone:
-            in_zone = Fal
+            in_zone = False
+            end_x = x[i-1]
+            zones.append((start_x, end_x))
+    if in_zone:
+        zones.append((start_x, x[-1]))
+    # Return up to first 6 zones with readable formatting
+    return [f"{s:.2f} → {e:.2f}" for s, e in zones][:6]
+
+
+if __name__ == '__main__':
+    main()
