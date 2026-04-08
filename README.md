@@ -43,7 +43,7 @@ streamlit run app.py
 2. If PowerShell blocks `Activate.ps1` due to execution policy, run Streamlit directly with the venv Python instead of activating:
 
 ```powershell
-cd 'C:\Users\carmi.marie.aranas\FullFocusBrakePressureAnalysis'
+cd 'C:\Users\.......\FullFocusBrakePressureAnalysis'
 .venv\Scripts\python.exe -m pip install --upgrade pip
 .venv\Scripts\python.exe -m pip install -r requirements.txt
 .venv\Scripts\python.exe -m streamlit run app.py
