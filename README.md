@@ -28,7 +28,7 @@ Install & run (Windows PowerShell)
 1. Create a virtual environment and install dependencies (recommended):
 
 ```powershell
-cd 'C:\Users\carmi.marie.aranas\FullFocusBrakePressureAnalysis'
+cd 'C:\Users\.....\FullFocusBrakePressureAnalysis'
 # Create venv
 python -m venv .venv
 # Activate (PowerShell)
